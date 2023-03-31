@@ -196,6 +196,9 @@ class StructureModel extends AbstractPathfinderModel {
     public function hasAccess(CharacterModel $characterModel) : bool {
         $access = false;
         if($characterModel->hasCorporation()){
+
+            $maps = $characterModel->getMaps();
+
             $this->filter('structureCorporations', ['active = ?', 1]);
             $this->has('structureCorporations.corporationId', ['active = ?', 1]);
             $this->has('structureCorporations.corporationId', ['id = ?', $characterModel->get('corporationId', true)]);

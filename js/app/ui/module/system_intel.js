@@ -274,9 +274,9 @@ define([
                         render: {
                             display: data => {
                                 let icon = '<i class="fas fa-pen"></i>';
-                                if(data.rowGroupData.id !== corporationId){
-                                    icon = '';
-                                }
+                                //if(data.rowGroupData.id !== corporationId){
+                                //    icon = '';
+                                //}
                                 return icon;
                             }
                         },
@@ -314,9 +314,9 @@ define([
                         render: {
                             display: data => {
                                 let icon = '<i class="fas fa-times txt-color txt-color-redDark"></i>';
-                                if(data.rowGroupData.id !== corporationId){
-                                    icon = '<i class="fas fa-ban txt-color txt-color-grayLight" title="restricted" data-placement="left"></i>';
-                                }
+                                //if(data.rowGroupData.id !== corporationId){
+                                //   icon = '<i class="fas fa-ban txt-color txt-color-grayLight" title="restricted" data-placement="left"></i>';
+                                //}
                                 return icon;
                             }
                         },
